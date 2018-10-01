@@ -11,5 +11,6 @@ RUN npm install
 COPY . .
 
 # TODO – CHECK 8081
-EXPOSE 8081
+# EXPOSE 8081
+# EXPOSE 8082
 CMD [ "npm", "start" ]

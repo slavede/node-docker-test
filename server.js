@@ -15,5 +15,12 @@ app.get('/api/test', (req, res) => {
   });
 });
 
+app.get('/', (req, res) => {
+  console.log('CLEAN request');
+  res.send({
+      test: 'CLEAN'
+  });
+});
+
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
